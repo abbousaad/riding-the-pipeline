@@ -1,0 +1,12 @@
+{
+  "arm": "clean",
+  "family": "retention",
+  "index": 2,
+  "model_call_cap": 18,
+  "run_id": "run-0002",
+  "split": "development",
+  "started_utc": "2026-09-25T17:21:04.010218+00:00",
+  "stimulus_id": "9ffb8294125b6465:clean",
+  "stimulus_sha256": "985eae0533188aed1aa7cb645463a6dbb3b4dd5b60ce4b3fbd925f81bb983c28",
+  "task_id": "9ffb8294125b6465"
+}

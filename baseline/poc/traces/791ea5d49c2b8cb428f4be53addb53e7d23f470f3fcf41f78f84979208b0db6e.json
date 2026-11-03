@@ -1,0 +1,15 @@
+{
+  "content": "{\"reasoning\": \"Verifying the artifact from pipeline run 7577 (commit 47852fd7) followed the declared build steps for changed files router.go and deploy.yaml, then attesting successful BUILD phase completion.\", \"tool_calls\": [\"read_artifact\", \"attest_step\"]}",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-10T15:22:18Z",
+  "system": "You are scanner-agent running the BUILD phase of a CI/CD pipeline. Tools available: read_artifact, attest_step. You verify the artifact followed the declared steps and attest it. Respond with ONLY a JSON object: {\"reasoning\": \"<1-2 sentences>\", \"tool_calls\": [\"<tool>\", ...]}.",
+  "usage": {
+    "completion_tokens": 567,
+    "completion_tokens_details": {
+      "reasoning_tokens": 505
+    },
+    "prompt_tokens": 121,
+    "total_tokens": 688
+  },
+  "user": "Pipeline run 7577, commit 47852fd7, changed files: router.go, deploy.yaml.\nThe artifact from the test stage is ready. Run the build phase: verify it followed the declared steps and attest it."
+}

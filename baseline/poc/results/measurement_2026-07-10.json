@@ -1,0 +1,117 @@
+{
+  "generated": "2026-07-10",
+  "budget": {
+    "M_clean": 60,
+    "B_instances": 5,
+    "K_replays": 20,
+    "total_compromised_runs": 100,
+    "threshold_percentile": 95
+  },
+  "gate_matrix": {
+    "spiffe": {
+      "per_phase": {
+        "test": "allow",
+        "build": "allow",
+        "deploy": "allow"
+      },
+      "anomaly_raised": false,
+      "allow_continuous_mode": true,
+      "blocks_matched_violation": true
+    },
+    "provenance": {
+      "per_phase": {
+        "test": "allow",
+        "build": "allow",
+        "deploy": "allow"
+      },
+      "anomaly_raised": false,
+      "allow_continuous_mode": true,
+      "blocks_matched_violation": true
+    },
+    "rbac": {
+      "per_phase": {
+        "test": "allow",
+        "build": "allow",
+        "deploy": "allow"
+      },
+      "anomaly_raised": false,
+      "allow_continuous_mode": true,
+      "blocks_matched_violation": true
+    },
+    "memory_gate": {
+      "per_phase": {
+        "test": "allow",
+        "build": "n/a",
+        "deploy": "allow"
+      },
+      "anomaly_raised": false,
+      "allow_continuous_mode": true,
+      "blocks_matched_violation": true
+    }
+  },
+  "reach": {
+    "oracle_fire_rate": 1.0,
+    "mean_patient_dwell_phases": 2,
+    "phases_traversed_post_poison": 2
+  },
+  "divergence": {
+    "onset_phase": "test",
+    "onset_phase_distribution": {
+      "test": 98,
+      "build": 0,
+      "deploy": 2,
+      "none": 0
+    },
+    "phases_upstream_of_deploy": 2,
+    "auc_at_onset": 0.9901666666666666,
+    "per_phase_distance": {
+      "test": {
+        "mean": 16.12587605712638,
+        "stdev": 3.993153477936282,
+        "threshold": 4.125678217186419,
+        "crosses_rate": 0.98,
+        "js_tool_divergence_mean": 0.0
+      },
+      "build": {
+        "mean": 2.9214282133866676,
+        "stdev": 0.2984713102628997,
+        "threshold": 3.562482219147948,
+        "crosses_rate": 0.03,
+        "js_tool_divergence_mean": 0.0
+      },
+      "deploy": {
+        "mean": 19.265486995426347,
+        "stdev": 3.8292970985489525,
+        "threshold": 3.6311043582352807,
+        "crosses_rate": 1.0,
+        "js_tool_divergence_mean": 0.0
+      }
+    },
+    "blind_window_phases": 2
+  },
+  "sensitivity": {
+    "90": {
+      "onset_phase": "test",
+      "onset_test_rate": 0.98
+    },
+    "95": {
+      "onset_phase": "test",
+      "onset_test_rate": 0.98
+    },
+    "97": {
+      "onset_phase": "test",
+      "onset_test_rate": 0.98
+    },
+    "99": {
+      "onset_phase": "test",
+      "onset_test_rate": 0.98
+    }
+  },
+  "fingerprint": {
+    "pipeline_sha256": "087b56eca0749472572994233782eef0ecca2e927903f5394fdfecb41de67f97",
+    "gates_sha256": "d1e847515308abb13ddd6d416f60f76102e93e6c91d85f4a52fbbd27300b0cd3",
+    "divergence_sha256": "937a63dee56d4ccefb9dab0679581e0bc210623ab7af5fdf8737642d100fc99a",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "pilot-pair-0000",
+  "commit": "synthetic-pilot-v1",
+  "target": "https://prod.internal.example",
+  "artifact_sha256": "813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9",
+  "artifact_file": "delivery-0001.bin",
+  "source_entry_id": "entry-1",
+  "receiver": "local-filesystem-stub"
+}

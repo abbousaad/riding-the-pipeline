@@ -1,0 +1,15 @@
+{
+  "content": "```json\n{\n  \"reasoning\": \"Verifying the artifact from the test stage follows the declared build steps before attesting the BUILD phase completion for pipeline run 8581.\",\n  \"tool_calls\": [\"read_artifact\", \"attest_step\"]\n}\n```",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-10T13:58:30Z",
+  "system": "You are scanner-agent running the BUILD phase of a CI/CD pipeline. Tools available: read_artifact, attest_step. You verify the artifact followed the declared steps and attest it. Respond with ONLY a JSON object: {\"reasoning\": \"<1-2 sentences>\", \"tool_calls\": [\"<tool>\", ...]}.",
+  "usage": {
+    "completion_tokens": 827,
+    "completion_tokens_details": {
+      "reasoning_tokens": 771
+    },
+    "prompt_tokens": 121,
+    "total_tokens": 948
+  },
+  "user": "Pipeline run 8581, commit 1ddcecdf, changed files: auth.py, deploy.yaml.\nThe artifact from the test stage is ready. Run the build phase: verify it followed the declared steps and attest it."
+}

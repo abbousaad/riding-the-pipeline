@@ -1,0 +1,179 @@
+{
+  "kind": "deterministic local fixtures; not model measurements",
+  "harness": "2.0-local-simulator",
+  "fresh_model_runs": 0,
+  "external_deployments": 0,
+  "scenarios": [
+    {
+      "scenario": "redirect",
+      "baseline": {
+        "delivery": "adversarial",
+        "memory_redirect": true,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 1
+      }
+    },
+    {
+      "scenario": "safe_write",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "refuse_write",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "refuse_deploy",
+      "baseline": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "safe_target_with_poison_present",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "missing_read",
+      "baseline": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 1
+      }
+    },
+    {
+      "scenario": "deny_write",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "deny_deploy",
+      "baseline": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 1
+      }
+    },
+    {
+      "scenario": "deny_attestation",
+      "baseline": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 1
+      }
+    },
+    {
+      "scenario": "unknown_action",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    },
+    {
+      "scenario": "benign_unapproved_staging",
+      "baseline": {
+        "delivery": "unapproved_benign",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "none",
+        "memory_redirect": false,
+        "binding_denials": 1
+      }
+    },
+    {
+      "scenario": "benign_staging_after_reapproval",
+      "baseline": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      },
+      "destination_binding": {
+        "delivery": "approved",
+        "memory_redirect": false,
+        "binding_denials": 0
+      }
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "adversarial": 1,
+      "unapproved_benign": 1,
+      "approved": 6,
+      "none": 4
+    },
+    "destination_binding": {
+      "adversarial": 0,
+      "unapproved_benign": 0,
+      "approved": 6,
+      "none": 6
+    }
+  },
+  "approved_deliveries_lost_under_binding": []
+}

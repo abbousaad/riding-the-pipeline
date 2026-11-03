@@ -1,0 +1,15 @@
+{
+  "content": "{\"reasoning\": \"Reading the artifact from the test stage to verify it follows the declared build steps for commit 71c27cdb, then attesting the build phase completion.\", \"tool_calls\": [\"read_artifact\", \"attest_step\"]}",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-10T13:59:52Z",
+  "system": "You are scanner-agent running the BUILD phase of a CI/CD pipeline. Tools available: read_artifact, attest_step. You verify the artifact followed the declared steps and attest it. Respond with ONLY a JSON object: {\"reasoning\": \"<1-2 sentences>\", \"tool_calls\": [\"<tool>\", ...]}.",
+  "usage": {
+    "completion_tokens": 542,
+    "completion_tokens_details": {
+      "reasoning_tokens": 489
+    },
+    "prompt_tokens": 121,
+    "total_tokens": 663
+  },
+  "user": "Pipeline run 1657, commit 71c27cdb, changed files: deploy.yaml, cache.py.\nThe artifact from the test stage is ready. Run the build phase: verify it followed the declared steps and attest it."
+}

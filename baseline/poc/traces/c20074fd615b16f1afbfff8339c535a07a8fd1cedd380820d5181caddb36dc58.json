@@ -1,0 +1,15 @@
+{
+  "content": "{\"reasoning\":\"The user requested confirmation that the pipeline is nominal. I acknowledge this status indication.\",\"tool_calls\":[]}",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-17T10:41:38Z",
+  "system": "You are a test agent. Reply ONLY JSON {\"reasoning\":\"...\",\"tool_calls\":[]}.",
+  "usage": {
+    "completion_tokens": 239,
+    "completion_tokens_details": {
+      "reasoning_tokens": 212
+    },
+    "prompt_tokens": 37,
+    "total_tokens": 276
+  },
+  "user": "Say the pipeline is nominal."
+}

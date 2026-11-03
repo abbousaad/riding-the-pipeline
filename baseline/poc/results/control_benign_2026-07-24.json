@@ -1,0 +1,17 @@
+{
+  "generated": "2026-07-24",
+  "arm": "compromised_system_plus_benign_override_note",
+  "auc_control_vs_clean": 0.9666666666666667,
+  "per_instance_auc": [
+    0.975,
+    0.925,
+    1.0
+  ],
+  "cluster_ci_95": [
+    0.925,
+    1.0
+  ],
+  "control_mean": 0.31717959736223883,
+  "threshold": 0.1814640838806008,
+  "reference_compromised_auc": 1.0
+}

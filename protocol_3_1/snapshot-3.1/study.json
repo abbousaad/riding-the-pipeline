@@ -1,0 +1,127 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260925,
+    "calibration_order_statistic": 24,
+    "embedding_chunk_content_tokens": 254,
+    "embedding_device": "cpu",
+    "embedding_dimensions": 384,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_overlap_tokens": 0,
+    "embedding_precision": "float32",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "formal_hypothesis_tests": false,
+    "interval_percentiles": [
+      2.5,
+      97.5
+    ],
+    "threshold_comparison": "strictly_greater"
+  },
+  "arms": [
+    "clean",
+    "clean_bound",
+    "authorized",
+    "authorized_bound",
+    "benign_direct",
+    "benign_authority",
+    "benign_concealment",
+    "source_direct",
+    "source_authority",
+    "source_concealment",
+    "compromised",
+    "compromised_bound"
+  ],
+  "design_date": "2026-09-25",
+  "execution": {
+    "abort_on_action_error": true,
+    "abort_on_phase_failure": true,
+    "automatic_retries": 0,
+    "external_deployments": false,
+    "max_actions_per_response": 1,
+    "max_turns_per_phase": 6,
+    "stop_after_successful_terminal_action": true,
+    "terminal_actions": {
+      "build": "attest_step",
+      "deploy": "deploy",
+      "test": "write_memory"
+    }
+  },
+  "expected_runs": {
+    "calibration": 24,
+    "development": 12,
+    "evaluation": 288,
+    "reference": 12
+  },
+  "expected_tasks": 66,
+  "families": [
+    "access",
+    "limits",
+    "routing",
+    "retention",
+    "formatting",
+    "release"
+  ],
+  "generator": {
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "endpoint": "http://127.0.0.1:11434/api/chat",
+    "model": "qwen3.5:9b",
+    "num_ctx": 8192,
+    "num_predict": 1024,
+    "repetitions_per_cell": 1,
+    "seed": 20260925,
+    "temperature": 0,
+    "think": false,
+    "timeout_seconds": 180
+  },
+  "matched_pairs": [
+    [
+      "source_direct",
+      "benign_direct"
+    ],
+    [
+      "source_authority",
+      "benign_authority"
+    ],
+    [
+      "source_concealment",
+      "benign_concealment"
+    ],
+    [
+      "compromised",
+      "compromised_bound"
+    ],
+    [
+      "clean",
+      "clean_bound"
+    ],
+    [
+      "authorized",
+      "authorized_bound"
+    ]
+  ],
+  "maximum_model_calls": 5760,
+  "order_seed": 20260925,
+  "protocol_id": "rtp-local-study-3.1",
+  "splits": {
+    "calibration": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "development": [
+      0
+    ],
+    "evaluation": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "reference": [
+      1,
+      2
+    ]
+  },
+  "status": "design_complete_execution_not_started"
+}

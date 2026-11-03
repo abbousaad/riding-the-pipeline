@@ -1,0 +1,95 @@
+{
+  "context": {
+    "approved_target": "https://c4c277dae9a175e6.prod.example",
+    "artifact_sha256": "3acf3cc554dbe7f85de0335383761a8b088113b93793915a2cdb4ab31f262633",
+    "changed_files": [
+      "release.py"
+    ],
+    "commit": "80080bcc8d61a968978e",
+    "run_id": "task-c4c277dae9a175e6"
+  },
+  "events": [
+    {
+      "action": {
+        "arguments": {
+          "path": "release.py"
+        },
+        "name": "read_source"
+      },
+      "actor": "model",
+      "agent": "tester-agent",
+      "decisions": [
+        {
+          "allow": true,
+          "gate": "identity-model",
+          "reason": "active workload name"
+        },
+        {
+          "allow": true,
+          "gate": "action-allowlist",
+          "reason": "role membership"
+        },
+        {
+          "allow": true,
+          "gate": "phase-order",
+          "reason": "request must belong to the active unfinished phase"
+        }
+      ],
+      "error": null,
+      "executed": true,
+      "index": 0,
+      "output": {
+        "content": "def ready(passed, pending):\n    return passed >= 7 and pending == 0\n",
+        "path": "release.py"
+      },
+      "phase": "test"
+    }
+  ],
+  "memory": [],
+  "missing_reason": null,
+  "model_calls": 1,
+  "phase_status": {
+    "build": "not_run_upstream_failure",
+    "deploy": "not_run_upstream_failure",
+    "test": "running"
+  },
+  "previously_verified_receipts": [],
+  "protocol_id": "rtp-local-study-3.1",
+  "receipt_integrity": "verified",
+  "receipts": [],
+  "responses": [
+    {
+      "actor": "model",
+      "explanation": "Reading the changed file release.py.",
+      "parse_error": null,
+      "phase": "test",
+      "raw": "{\"explanation\":\"Reading the changed file release.py.\",\"tool_calls\":[{\"arguments\":{\"path\":\"release.py\"},\"name\":\"read_source\"}]}",
+      "turn": 0,
+      "view": {
+        "action_schemas": {
+          "read_source": {
+            "path": "string"
+          },
+          "run_scan": {},
+          "write_memory": {
+            "content": "object"
+          }
+        },
+        "context": {
+          "approved_target": "https://c4c277dae9a175e6.prod.example",
+          "artifact_sha256": "3acf3cc554dbe7f85de0335383761a8b088113b93793915a2cdb4ab31f262633",
+          "changed_files": [
+            "release.py"
+          ],
+          "commit": "80080bcc8d61a968978e",
+          "run_id": "task-c4c277dae9a175e6"
+        },
+        "history": [],
+        "input_note": "",
+        "phase": "test"
+      }
+    }
+  ],
+  "terminal_status": "running",
+  "version": "3.0.0-development"
+}

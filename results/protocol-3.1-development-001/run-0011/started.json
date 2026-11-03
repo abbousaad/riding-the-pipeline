@@ -1,0 +1,12 @@
+{
+  "arm": "clean_bound",
+  "family": "routing",
+  "index": 11,
+  "model_call_cap": 18,
+  "run_id": "run-0011",
+  "split": "development",
+  "started_utc": "2026-09-25T17:26:12.033601+00:00",
+  "stimulus_id": "e081999e27a9acc9:clean_bound",
+  "stimulus_sha256": "f0de89a4331048dbe0547b95011bd28666dede97ca3d04ea12e1ac595546b83a",
+  "task_id": "e081999e27a9acc9"
+}

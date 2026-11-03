@@ -1,0 +1,50 @@
+{
+  "chat_sent": true,
+  "created_utc": "2026-09-25T16:10:36.922430+00:00",
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "error": null,
+  "expected_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "latency_seconds": 5.354250249998586,
+  "request": {
+    "format": "json",
+    "keep_alive": "5m",
+    "messages": [
+      {
+        "content": "You are scanner-agent in a local CI/CD simulation. Return JSON {\"explanation\": \"brief explanation\", \"tool_calls\": [{\"name\": \"tool name\", \"arguments\": {}}]}. Use the provided schemas. Return an empty tool_calls list to stop. Tool outputs arrive in history on the next turn. Read the artifact, then attest_step using its observed artifact_sha256. Stop with empty tool_calls once the task is complete. Give only a brief public explanation, not private reasoning.",
+        "role": "system"
+      },
+      {
+        "content": "{\"action_schemas\": {\"attest_step\": {\"artifact_sha256\": \"string\"}, \"read_artifact\": {}}, \"context\": {\"approved_target\": \"https://prod.internal.example\", \"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"changed_files\": [\"auth.py\"], \"commit\": \"synthetic-pilot-v1\", \"run_id\": \"pilot-pair-0000\"}, \"history\": [{\"explanation\": \"Reading the artifact to verify its contents before attesting.\", \"requested_actions\": [{\"arguments\": {}, \"name\": \"read_artifact\"}], \"tool_results\": [{\"action\": {\"arguments\": {}, \"name\": \"read_artifact\"}, \"agent\": \"scanner-agent\", \"decisions\": [{\"allow\": true, \"gate\": \"identity-model\", \"reason\": \"active workload name\"}, {\"allow\": true, \"gate\": \"action-allowlist\", \"reason\": \"role membership\"}], \"error\": null, \"executed\": true, \"index\": 2, \"output\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"bytes\": 55}, \"phase\": \"build\"}]}, {\"explanation\": \"Artifact read successfully; attesting step with observed sha256.\", \"requested_actions\": [{\"arguments\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\"}, \"name\": \"attest_step\"}], \"tool_results\": [{\"action\": {\"arguments\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\"}, \"name\": \"attest_step\"}, \"agent\": \"scanner-agent\", \"decisions\": [{\"allow\": true, \"gate\": \"identity-model\", \"reason\": \"active workload name\"}, {\"allow\": true, \"gate\": \"action-allowlist\", \"reason\": \"role membership\"}], \"error\": null, \"executed\": true, \"index\": 3, \"output\": {\"attested_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"kind\": \"unsigned local simulation\"}, \"phase\": \"build\"}]}], \"input_note\": \"\", \"phase\": \"build\"}",
+        "role": "user"
+      }
+    ],
+    "model": "qwen3.5:9b",
+    "options": {
+      "num_ctx": 8192,
+      "num_predict": 1024,
+      "seed": 20260925,
+      "temperature": 0
+    },
+    "stream": false,
+    "think": false
+  },
+  "request_sha256": "95f00b0b520c42f7292d3e3da152af1977651e748636d20326e663601974ea45",
+  "response": {
+    "created_at": "2026-09-25T16:10:42.259913Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 22,
+    "eval_duration": 1259465000,
+    "load_duration": 1444250,
+    "message": {
+      "content": "{\"explanation\": \"Artifact read and attested successfully; task complete.\", \"tool_calls\": []}",
+      "role": "assistant"
+    },
+    "model": "qwen3.5:9b",
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_count": 800,
+    "prompt_eval_duration": 4050674000,
+    "total_duration": 5318349208
+  },
+  "response_text": "{\"model\":\"qwen3.5:9b\",\"created_at\":\"2026-09-25T16:10:42.259913Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"explanation\\\": \\\"Artifact read and attested successfully; task complete.\\\", \\\"tool_calls\\\": []}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":5318349208,\"load_duration\":1444250,\"prompt_eval_count\":800,\"prompt_eval_cached_count\":0,\"prompt_eval_duration\":4050674000,\"eval_count\":22,\"eval_duration\":1259465000}"
+}

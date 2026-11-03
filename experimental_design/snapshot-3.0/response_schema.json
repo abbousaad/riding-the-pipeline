@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "explanation": {
+      "type": "string"
+    },
+    "tool_calls": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "arguments": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "arguments"
+        ],
+        "type": "object"
+      },
+      "maxItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "explanation",
+    "tool_calls"
+  ],
+  "type": "object"
+}

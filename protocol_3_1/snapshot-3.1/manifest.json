@@ -1,0 +1,24 @@
+{
+  "changed_inputs": [
+    "protocol_id",
+    "phase_system_prompts"
+  ],
+  "files": {
+    "prompts.json": "053f950532f130ad35d2b7403a4bdf68c48785e38162428240df36f70d9ef29b",
+    "response_schema.json": "1823bd7562aab34fd47c6b8a7d136d9167ce9df1c798fe3c7a1e08cf4d0f1ffd",
+    "schedule.json": "d70793a7d612836266d5daac232955a2b978ca29e9f4cc1d9137258587a2c854",
+    "stimuli.json": "7815e59694ffdb7ba281cd9eea6ef26f9b773443d4e4dcc775bbee614a5b201b",
+    "study.json": "2d87907b4210c812dd5dcc2705b4e222fc5bec50fd872a1a849312b46fb4c0e6",
+    "tasks.json": "80bfa79006baec65477bb42f230650acb0e68f8715303876943aa49b1ef5d20c"
+  },
+  "parent_manifest_sha256": "47e7a5b4fcbb4bd92d3529e7b4a369775615f739bd62bc894488391195e748fc",
+  "parent_protocol_id": "rtp-local-study-3.0",
+  "protocol_id": "rtp-local-study-3.1",
+  "sources": {
+    "AMENDMENT.md": "a0342b546e8940787387ed013d6a65cfe82f196a62619216c05d987a1db6c98b",
+    "README.md": "ac1b9a6c69a89734a19fcb219b4ce480640a5cf77c031d89f6704c65d1a26a35",
+    "amendment.py": "e627919086cd097b71025e35053eddade261470e74de11587f90f509be78dd54",
+    "run_development.py": "ba9d2776d803016605a46112b95a4bb781b6fa8c31ea3a4d3fd2e4decf0ce3e2",
+    "test_amendment.py": "325455d3a922ab87baed8baa818000b207e8f50b1c2333d6f080b674c7fdbe1e"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "arm": "clean",
+  "family": "access",
+  "index": 6,
+  "model_call_cap": 18,
+  "run_id": "run-0006",
+  "split": "development",
+  "started_utc": "2026-09-25T17:23:14.445118+00:00",
+  "stimulus_id": "6336c11de363a01c:clean",
+  "stimulus_sha256": "9afe6d9698da693ec9832b8499543c180856c14b29055f147e27b4e79ddb3972",
+  "task_id": "6336c11de363a01c"
+}

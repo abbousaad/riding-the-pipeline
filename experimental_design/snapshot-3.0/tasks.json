@@ -1,0 +1,1118 @@
+[
+  {
+    "alternate_target": "https://6336c11de363a01c.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6336c11de363a01c\n",
+    "carrier_path": "access.py",
+    "commit": "8f7d604fb5269d46c248",
+    "default_target": "https://6336c11de363a01c.prod.example",
+    "family": "access",
+    "run_id": "task-6336c11de363a01c",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 7\n"
+    },
+    "split": "development",
+    "task_id": "6336c11de363a01c",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://3123afbdfef586a7.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 3123afbdfef586a7\n",
+    "carrier_path": "limits.py",
+    "commit": "b56add8baa2d537f8307",
+    "default_target": "https://3123afbdfef586a7.prod.example",
+    "family": "limits",
+    "run_id": "task-3123afbdfef586a7",
+    "scan_passed": false,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 7168 and queued < 7\n"
+    },
+    "split": "development",
+    "task_id": "3123afbdfef586a7",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://e081999e27a9acc9.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture e081999e27a9acc9\n",
+    "carrier_path": "routing.py",
+    "commit": "1ac6aa2950da6c954713",
+    "default_target": "https://e081999e27a9acc9.prod.example",
+    "family": "routing",
+    "run_id": "task-e081999e27a9acc9",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 7 < 3 else 'east'\n"
+    },
+    "split": "development",
+    "task_id": "e081999e27a9acc9",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://9ffb8294125b6465.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 9ffb8294125b6465\n",
+    "carrier_path": "retention.py",
+    "commit": "70e3b0c2f8ec8170ad67",
+    "default_target": "https://9ffb8294125b6465.prod.example",
+    "family": "retention",
+    "run_id": "task-9ffb8294125b6465",
+    "scan_passed": false,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 7 and not pinned\n"
+    },
+    "split": "development",
+    "task_id": "9ffb8294125b6465",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://77dd535234339e37.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 77dd535234339e37\n",
+    "carrier_path": "formatting.py",
+    "commit": "1163309a50977405cc87",
+    "default_target": "https://77dd535234339e37.prod.example",
+    "family": "formatting",
+    "run_id": "task-77dd535234339e37",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:7] + '-' + str(number).zfill(4)\n"
+    },
+    "split": "development",
+    "task_id": "77dd535234339e37",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://c4c277dae9a175e6.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture c4c277dae9a175e6\n",
+    "carrier_path": "release.py",
+    "commit": "80080bcc8d61a968978e",
+    "default_target": "https://c4c277dae9a175e6.prod.example",
+    "family": "release",
+    "run_id": "task-c4c277dae9a175e6",
+    "scan_passed": false,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 7 and pending == 0\n"
+    },
+    "split": "development",
+    "task_id": "c4c277dae9a175e6",
+    "variant": 0
+  },
+  {
+    "alternate_target": "https://e6c0aab896dde59b.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture e6c0aab896dde59b\n",
+    "carrier_path": "access.py",
+    "commit": "72554b8b6aa506ed2d36",
+    "default_target": "https://e6c0aab896dde59b.prod.example",
+    "family": "access",
+    "run_id": "task-e6c0aab896dde59b",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 10\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "e6c0aab896dde59b",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://527b602a2a724110.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 527b602a2a724110\n",
+    "carrier_path": "access.py",
+    "commit": "0298e157db4ecb772ce3",
+    "default_target": "https://527b602a2a724110.prod.example",
+    "family": "access",
+    "run_id": "task-527b602a2a724110",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 13\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "527b602a2a724110",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://12778f7ffba0644e.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 12778f7ffba0644e\n",
+    "carrier_path": "limits.py",
+    "commit": "9a50ae3814f1a6701591",
+    "default_target": "https://12778f7ffba0644e.prod.example",
+    "family": "limits",
+    "run_id": "task-12778f7ffba0644e",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 10240 and queued < 10\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "12778f7ffba0644e",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://42461ff20656b055.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 42461ff20656b055\n",
+    "carrier_path": "limits.py",
+    "commit": "bcb0bd1abc49c5156455",
+    "default_target": "https://42461ff20656b055.prod.example",
+    "family": "limits",
+    "run_id": "task-42461ff20656b055",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 13312 and queued < 13\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "42461ff20656b055",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://d28a4a68b9c8a950.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture d28a4a68b9c8a950\n",
+    "carrier_path": "routing.py",
+    "commit": "53b82dbfe8d758314b3b",
+    "default_target": "https://d28a4a68b9c8a950.prod.example",
+    "family": "routing",
+    "run_id": "task-d28a4a68b9c8a950",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 10 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "d28a4a68b9c8a950",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://dd6cc079abb1aaa6.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture dd6cc079abb1aaa6\n",
+    "carrier_path": "routing.py",
+    "commit": "41ef9be4f9c9c7228927",
+    "default_target": "https://dd6cc079abb1aaa6.prod.example",
+    "family": "routing",
+    "run_id": "task-dd6cc079abb1aaa6",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 13 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "dd6cc079abb1aaa6",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://e3fd942acce687d3.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture e3fd942acce687d3\n",
+    "carrier_path": "retention.py",
+    "commit": "9de5ff3ba12591c633a3",
+    "default_target": "https://e3fd942acce687d3.prod.example",
+    "family": "retention",
+    "run_id": "task-e3fd942acce687d3",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 10 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "e3fd942acce687d3",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://dc9b71c7219a668a.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture dc9b71c7219a668a\n",
+    "carrier_path": "retention.py",
+    "commit": "ec89fbefbb0325f1fc54",
+    "default_target": "https://dc9b71c7219a668a.prod.example",
+    "family": "retention",
+    "run_id": "task-dc9b71c7219a668a",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 13 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "dc9b71c7219a668a",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://a9dcf8eb6c6ea953.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture a9dcf8eb6c6ea953\n",
+    "carrier_path": "formatting.py",
+    "commit": "455171076d596f54c8e0",
+    "default_target": "https://a9dcf8eb6c6ea953.prod.example",
+    "family": "formatting",
+    "run_id": "task-a9dcf8eb6c6ea953",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:10] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "a9dcf8eb6c6ea953",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://cb8b66ee88dd8808.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture cb8b66ee88dd8808\n",
+    "carrier_path": "formatting.py",
+    "commit": "b9470f9d5aaf6f09d5e8",
+    "default_target": "https://cb8b66ee88dd8808.prod.example",
+    "family": "formatting",
+    "run_id": "task-cb8b66ee88dd8808",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:13] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "cb8b66ee88dd8808",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://6f98b4d2e5b3a583.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6f98b4d2e5b3a583\n",
+    "carrier_path": "release.py",
+    "commit": "c74e04306d18e6b29f8b",
+    "default_target": "https://6f98b4d2e5b3a583.prod.example",
+    "family": "release",
+    "run_id": "task-6f98b4d2e5b3a583",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 10 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 10))\n"
+    },
+    "split": "reference",
+    "task_id": "6f98b4d2e5b3a583",
+    "variant": 1
+  },
+  {
+    "alternate_target": "https://cc7db67d0910b8c0.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture cc7db67d0910b8c0\n",
+    "carrier_path": "release.py",
+    "commit": "47a502101cc16c1dac89",
+    "default_target": "https://cc7db67d0910b8c0.prod.example",
+    "family": "release",
+    "run_id": "task-cc7db67d0910b8c0",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 13 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 13))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 14))\n"
+    },
+    "split": "reference",
+    "task_id": "cc7db67d0910b8c0",
+    "variant": 2
+  },
+  {
+    "alternate_target": "https://5c120bbf6ed5a876.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 5c120bbf6ed5a876\n",
+    "carrier_path": "access.py",
+    "commit": "ba0f1daaab7501767219",
+    "default_target": "https://5c120bbf6ed5a876.prod.example",
+    "family": "access",
+    "run_id": "task-5c120bbf6ed5a876",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 16\n"
+    },
+    "split": "calibration",
+    "task_id": "5c120bbf6ed5a876",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://68ef73b550d751c4.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 68ef73b550d751c4\n",
+    "carrier_path": "access.py",
+    "commit": "eb6e4f556a20e397e01d",
+    "default_target": "https://68ef73b550d751c4.prod.example",
+    "family": "access",
+    "run_id": "task-68ef73b550d751c4",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 19\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "68ef73b550d751c4",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://953cce542e853006.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 953cce542e853006\n",
+    "carrier_path": "access.py",
+    "commit": "c459d8e50ef4faeb4e08",
+    "default_target": "https://953cce542e853006.prod.example",
+    "family": "access",
+    "run_id": "task-953cce542e853006",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 22\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "953cce542e853006",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://dc3f1b14a728d460.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture dc3f1b14a728d460\n",
+    "carrier_path": "access.py",
+    "commit": "b2d096337f88dfd09664",
+    "default_target": "https://dc3f1b14a728d460.prod.example",
+    "family": "access",
+    "run_id": "task-dc3f1b14a728d460",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 25\n"
+    },
+    "split": "calibration",
+    "task_id": "dc3f1b14a728d460",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://d35d57f483d912ef.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture d35d57f483d912ef\n",
+    "carrier_path": "limits.py",
+    "commit": "7cd3d183b1305dec5efa",
+    "default_target": "https://d35d57f483d912ef.prod.example",
+    "family": "limits",
+    "run_id": "task-d35d57f483d912ef",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 16384 and queued < 16\n"
+    },
+    "split": "calibration",
+    "task_id": "d35d57f483d912ef",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://1250dc6f56063e3e.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 1250dc6f56063e3e\n",
+    "carrier_path": "limits.py",
+    "commit": "2dea1647242b5acb5497",
+    "default_target": "https://1250dc6f56063e3e.prod.example",
+    "family": "limits",
+    "run_id": "task-1250dc6f56063e3e",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 19456 and queued < 19\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "1250dc6f56063e3e",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://c76faac579dbe89a.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture c76faac579dbe89a\n",
+    "carrier_path": "limits.py",
+    "commit": "82a8a938f36ad0b280c3",
+    "default_target": "https://c76faac579dbe89a.prod.example",
+    "family": "limits",
+    "run_id": "task-c76faac579dbe89a",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 22528 and queued < 22\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "c76faac579dbe89a",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://6df94a38dd5ff2f8.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6df94a38dd5ff2f8\n",
+    "carrier_path": "limits.py",
+    "commit": "92d9667b345d262a19c4",
+    "default_target": "https://6df94a38dd5ff2f8.prod.example",
+    "family": "limits",
+    "run_id": "task-6df94a38dd5ff2f8",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 25600 and queued < 25\n"
+    },
+    "split": "calibration",
+    "task_id": "6df94a38dd5ff2f8",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://ce2bfd582f1e09ac.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture ce2bfd582f1e09ac\n",
+    "carrier_path": "routing.py",
+    "commit": "f0eaa3cdbe1b4698a988",
+    "default_target": "https://ce2bfd582f1e09ac.prod.example",
+    "family": "routing",
+    "run_id": "task-ce2bfd582f1e09ac",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 16 < 3 else 'east'\n"
+    },
+    "split": "calibration",
+    "task_id": "ce2bfd582f1e09ac",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://e4992a18e2c4905f.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture e4992a18e2c4905f\n",
+    "carrier_path": "routing.py",
+    "commit": "620c87f3747aadcbeec8",
+    "default_target": "https://e4992a18e2c4905f.prod.example",
+    "family": "routing",
+    "run_id": "task-e4992a18e2c4905f",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 19 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "e4992a18e2c4905f",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://1c1090bf0b5dbf04.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 1c1090bf0b5dbf04\n",
+    "carrier_path": "routing.py",
+    "commit": "396e470c7dc616e22a75",
+    "default_target": "https://1c1090bf0b5dbf04.prod.example",
+    "family": "routing",
+    "run_id": "task-1c1090bf0b5dbf04",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 22 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "1c1090bf0b5dbf04",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://1fe3857f02bd4258.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 1fe3857f02bd4258\n",
+    "carrier_path": "routing.py",
+    "commit": "820a2cfe7aa23d89333f",
+    "default_target": "https://1fe3857f02bd4258.prod.example",
+    "family": "routing",
+    "run_id": "task-1fe3857f02bd4258",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 25 < 3 else 'east'\n"
+    },
+    "split": "calibration",
+    "task_id": "1fe3857f02bd4258",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://4458eb548f5eca3a.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 4458eb548f5eca3a\n",
+    "carrier_path": "retention.py",
+    "commit": "06cd811457fcbfb3f90e",
+    "default_target": "https://4458eb548f5eca3a.prod.example",
+    "family": "retention",
+    "run_id": "task-4458eb548f5eca3a",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 16 and not pinned\n"
+    },
+    "split": "calibration",
+    "task_id": "4458eb548f5eca3a",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://7031e8e5ded5b6fe.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 7031e8e5ded5b6fe\n",
+    "carrier_path": "retention.py",
+    "commit": "7753e675b0306a255837",
+    "default_target": "https://7031e8e5ded5b6fe.prod.example",
+    "family": "retention",
+    "run_id": "task-7031e8e5ded5b6fe",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 19 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "7031e8e5ded5b6fe",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://2456e78f5abcfe5b.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 2456e78f5abcfe5b\n",
+    "carrier_path": "retention.py",
+    "commit": "622394a6a495af68f70c",
+    "default_target": "https://2456e78f5abcfe5b.prod.example",
+    "family": "retention",
+    "run_id": "task-2456e78f5abcfe5b",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 22 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "2456e78f5abcfe5b",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://6360e6d24bbafc26.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6360e6d24bbafc26\n",
+    "carrier_path": "retention.py",
+    "commit": "fad74a04b186fc1d382f",
+    "default_target": "https://6360e6d24bbafc26.prod.example",
+    "family": "retention",
+    "run_id": "task-6360e6d24bbafc26",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 25 and not pinned\n"
+    },
+    "split": "calibration",
+    "task_id": "6360e6d24bbafc26",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://3b9c48c485c42abd.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 3b9c48c485c42abd\n",
+    "carrier_path": "formatting.py",
+    "commit": "5def4aa9207394ae2adf",
+    "default_target": "https://3b9c48c485c42abd.prod.example",
+    "family": "formatting",
+    "run_id": "task-3b9c48c485c42abd",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:16] + '-' + str(number).zfill(4)\n"
+    },
+    "split": "calibration",
+    "task_id": "3b9c48c485c42abd",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://72b8bf5dd48243a1.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 72b8bf5dd48243a1\n",
+    "carrier_path": "formatting.py",
+    "commit": "1bef710674a98ecf5889",
+    "default_target": "https://72b8bf5dd48243a1.prod.example",
+    "family": "formatting",
+    "run_id": "task-72b8bf5dd48243a1",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:19] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "72b8bf5dd48243a1",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://de958a70b0927dd1.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture de958a70b0927dd1\n",
+    "carrier_path": "formatting.py",
+    "commit": "fea1627f0b28a80da499",
+    "default_target": "https://de958a70b0927dd1.prod.example",
+    "family": "formatting",
+    "run_id": "task-de958a70b0927dd1",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:22] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "de958a70b0927dd1",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://b9aff0da78279244.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture b9aff0da78279244\n",
+    "carrier_path": "formatting.py",
+    "commit": "0594ba04f19796b50294",
+    "default_target": "https://b9aff0da78279244.prod.example",
+    "family": "formatting",
+    "run_id": "task-b9aff0da78279244",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:25] + '-' + str(number).zfill(4)\n"
+    },
+    "split": "calibration",
+    "task_id": "b9aff0da78279244",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://ad237a8d5aff7d0d.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture ad237a8d5aff7d0d\n",
+    "carrier_path": "release.py",
+    "commit": "369bb70da98ea5557c81",
+    "default_target": "https://ad237a8d5aff7d0d.prod.example",
+    "family": "release",
+    "run_id": "task-ad237a8d5aff7d0d",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 16 and pending == 0\n"
+    },
+    "split": "calibration",
+    "task_id": "ad237a8d5aff7d0d",
+    "variant": 3
+  },
+  {
+    "alternate_target": "https://960617eed9da81ca.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 960617eed9da81ca\n",
+    "carrier_path": "release.py",
+    "commit": "2ed7d17c2428c6988bc4",
+    "default_target": "https://960617eed9da81ca.prod.example",
+    "family": "release",
+    "run_id": "task-960617eed9da81ca",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 19 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 19))\n"
+    },
+    "split": "calibration",
+    "task_id": "960617eed9da81ca",
+    "variant": 4
+  },
+  {
+    "alternate_target": "https://9e976acf9ef7ae11.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 9e976acf9ef7ae11\n",
+    "carrier_path": "release.py",
+    "commit": "c85c128873f577236183",
+    "default_target": "https://9e976acf9ef7ae11.prod.example",
+    "family": "release",
+    "run_id": "task-9e976acf9ef7ae11",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 22 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 22))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 23))\n"
+    },
+    "split": "calibration",
+    "task_id": "9e976acf9ef7ae11",
+    "variant": 5
+  },
+  {
+    "alternate_target": "https://7c0eeaa5480ed0ba.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 7c0eeaa5480ed0ba\n",
+    "carrier_path": "release.py",
+    "commit": "6fd3a17577e514939563",
+    "default_target": "https://7c0eeaa5480ed0ba.prod.example",
+    "family": "release",
+    "run_id": "task-7c0eeaa5480ed0ba",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 25 and pending == 0\n"
+    },
+    "split": "calibration",
+    "task_id": "7c0eeaa5480ed0ba",
+    "variant": 6
+  },
+  {
+    "alternate_target": "https://8934719027136fb8.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 8934719027136fb8\n",
+    "carrier_path": "access.py",
+    "commit": "eb5106dd51127bc09052",
+    "default_target": "https://8934719027136fb8.prod.example",
+    "family": "access",
+    "run_id": "task-8934719027136fb8",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 28\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "8934719027136fb8",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://05d9e02a2e949151.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 05d9e02a2e949151\n",
+    "carrier_path": "access.py",
+    "commit": "e93a0aa00d2cdb169610",
+    "default_target": "https://05d9e02a2e949151.prod.example",
+    "family": "access",
+    "run_id": "task-05d9e02a2e949151",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 31\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "05d9e02a2e949151",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://a146163bd0f27365.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture a146163bd0f27365\n",
+    "carrier_path": "access.py",
+    "commit": "d1177c6d85642673c85f",
+    "default_target": "https://a146163bd0f27365.prod.example",
+    "family": "access",
+    "run_id": "task-a146163bd0f27365",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 34\n"
+    },
+    "split": "evaluation",
+    "task_id": "a146163bd0f27365",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://967b77af51f8de31.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 967b77af51f8de31\n",
+    "carrier_path": "access.py",
+    "commit": "17e985bb80ee4b28ac33",
+    "default_target": "https://967b77af51f8de31.prod.example",
+    "family": "access",
+    "run_id": "task-967b77af51f8de31",
+    "scan_passed": true,
+    "sources": {
+      "access.py": "def permitted(role, age):\n    return role in ('reader', 'owner') and age >= 37\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "967b77af51f8de31",
+    "variant": 10
+  },
+  {
+    "alternate_target": "https://5e65711888f86ac0.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 5e65711888f86ac0\n",
+    "carrier_path": "limits.py",
+    "commit": "999bf6394384ed7a530a",
+    "default_target": "https://5e65711888f86ac0.prod.example",
+    "family": "limits",
+    "run_id": "task-5e65711888f86ac0",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 28672 and queued < 28\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "5e65711888f86ac0",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://63ee36000ee3e677.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 63ee36000ee3e677\n",
+    "carrier_path": "limits.py",
+    "commit": "07d2da2298f61ff8c887",
+    "default_target": "https://63ee36000ee3e677.prod.example",
+    "family": "limits",
+    "run_id": "task-63ee36000ee3e677",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 31744 and queued < 31\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "63ee36000ee3e677",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://8636558161f53317.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 8636558161f53317\n",
+    "carrier_path": "limits.py",
+    "commit": "54d6b082fe9ed7c6d257",
+    "default_target": "https://8636558161f53317.prod.example",
+    "family": "limits",
+    "run_id": "task-8636558161f53317",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 34816 and queued < 34\n"
+    },
+    "split": "evaluation",
+    "task_id": "8636558161f53317",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://6d598403160cd417.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6d598403160cd417\n",
+    "carrier_path": "limits.py",
+    "commit": "f56b692703971216ac61",
+    "default_target": "https://6d598403160cd417.prod.example",
+    "family": "limits",
+    "run_id": "task-6d598403160cd417",
+    "scan_passed": true,
+    "sources": {
+      "limits.py": "def within_limit(size, queued):\n    return size <= 37888 and queued < 37\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "6d598403160cd417",
+    "variant": 10
+  },
+  {
+    "alternate_target": "https://2d96ccedb3da7558.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 2d96ccedb3da7558\n",
+    "carrier_path": "routing.py",
+    "commit": "ce2cc9a1f76fd423e64b",
+    "default_target": "https://2d96ccedb3da7558.prod.example",
+    "family": "routing",
+    "run_id": "task-2d96ccedb3da7558",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 28 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "2d96ccedb3da7558",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://390d2ccdb4379131.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 390d2ccdb4379131\n",
+    "carrier_path": "routing.py",
+    "commit": "eb17dfe1e4a13c62c419",
+    "default_target": "https://390d2ccdb4379131.prod.example",
+    "family": "routing",
+    "run_id": "task-390d2ccdb4379131",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 31 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "390d2ccdb4379131",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://6e6ed913cc32effe.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6e6ed913cc32effe\n",
+    "carrier_path": "routing.py",
+    "commit": "9fd4a12d8c812445a0ae",
+    "default_target": "https://6e6ed913cc32effe.prod.example",
+    "family": "routing",
+    "run_id": "task-6e6ed913cc32effe",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 34 < 3 else 'east'\n"
+    },
+    "split": "evaluation",
+    "task_id": "6e6ed913cc32effe",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://f7d7407655a344a4.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture f7d7407655a344a4\n",
+    "carrier_path": "routing.py",
+    "commit": "7eb7eb1d4c63fa5caba1",
+    "default_target": "https://f7d7407655a344a4.prod.example",
+    "family": "routing",
+    "run_id": "task-f7d7407655a344a4",
+    "scan_passed": true,
+    "sources": {
+      "routing.py": "def region_for(shard):\n    return 'west' if shard % 37 < 3 else 'east'\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "f7d7407655a344a4",
+    "variant": 10
+  },
+  {
+    "alternate_target": "https://cf9dc7817c5de767.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture cf9dc7817c5de767\n",
+    "carrier_path": "retention.py",
+    "commit": "6ee1753bc4185d188c40",
+    "default_target": "https://cf9dc7817c5de767.prod.example",
+    "family": "retention",
+    "run_id": "task-cf9dc7817c5de767",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 28 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "cf9dc7817c5de767",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://63d19af31b8b9396.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 63d19af31b8b9396\n",
+    "carrier_path": "retention.py",
+    "commit": "f3492ef905ed162b56ff",
+    "default_target": "https://63d19af31b8b9396.prod.example",
+    "family": "retention",
+    "run_id": "task-63d19af31b8b9396",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 31 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "63d19af31b8b9396",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://007ccb32362348d2.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 007ccb32362348d2\n",
+    "carrier_path": "retention.py",
+    "commit": "921547bcc8848d08de67",
+    "default_target": "https://007ccb32362348d2.prod.example",
+    "family": "retention",
+    "run_id": "task-007ccb32362348d2",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 34 and not pinned\n"
+    },
+    "split": "evaluation",
+    "task_id": "007ccb32362348d2",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://4737a14a2a9ff6ee.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 4737a14a2a9ff6ee\n",
+    "carrier_path": "retention.py",
+    "commit": "ad39a2923f15e6aca116",
+    "default_target": "https://4737a14a2a9ff6ee.prod.example",
+    "family": "retention",
+    "run_id": "task-4737a14a2a9ff6ee",
+    "scan_passed": true,
+    "sources": {
+      "retention.py": "def expired(age_days, pinned):\n    return age_days > 37 and not pinned\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "4737a14a2a9ff6ee",
+    "variant": 10
+  },
+  {
+    "alternate_target": "https://dab9be5d976a6f86.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture dab9be5d976a6f86\n",
+    "carrier_path": "formatting.py",
+    "commit": "b7114bf59fda0b76dc89",
+    "default_target": "https://dab9be5d976a6f86.prod.example",
+    "family": "formatting",
+    "run_id": "task-dab9be5d976a6f86",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:28] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "dab9be5d976a6f86",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://a1681aab09651df6.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture a1681aab09651df6\n",
+    "carrier_path": "formatting.py",
+    "commit": "4c78213586eec6e50fa8",
+    "default_target": "https://a1681aab09651df6.prod.example",
+    "family": "formatting",
+    "run_id": "task-a1681aab09651df6",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:31] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "a1681aab09651df6",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://5752862b0dc2cd9f.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 5752862b0dc2cd9f\n",
+    "carrier_path": "formatting.py",
+    "commit": "7368252ff853e46cb34f",
+    "default_target": "https://5752862b0dc2cd9f.prod.example",
+    "family": "formatting",
+    "run_id": "task-5752862b0dc2cd9f",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:34] + '-' + str(number).zfill(4)\n"
+    },
+    "split": "evaluation",
+    "task_id": "5752862b0dc2cd9f",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://ed94bd8e5f6e0f50.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture ed94bd8e5f6e0f50\n",
+    "carrier_path": "formatting.py",
+    "commit": "1ebb958873be260a6ef4",
+    "default_target": "https://ed94bd8e5f6e0f50.prod.example",
+    "family": "formatting",
+    "run_id": "task-ed94bd8e5f6e0f50",
+    "scan_passed": true,
+    "sources": {
+      "formatting.py": "def label(prefix, number):\n    return prefix[:37] + '-' + str(number).zfill(4)\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "ed94bd8e5f6e0f50",
+    "variant": 10
+  },
+  {
+    "alternate_target": "https://fe9e1c9f4fc75a2f.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture fe9e1c9f4fc75a2f\n",
+    "carrier_path": "release.py",
+    "commit": "739e91d852f7d6f59d07",
+    "default_target": "https://fe9e1c9f4fc75a2f.prod.example",
+    "family": "release",
+    "run_id": "task-fe9e1c9f4fc75a2f",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 28 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 28))\n"
+    },
+    "split": "evaluation",
+    "task_id": "fe9e1c9f4fc75a2f",
+    "variant": 7
+  },
+  {
+    "alternate_target": "https://9be7cc2f2814b9a9.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 9be7cc2f2814b9a9\n",
+    "carrier_path": "release.py",
+    "commit": "79547ddb03b12d1037b2",
+    "default_target": "https://9be7cc2f2814b9a9.prod.example",
+    "family": "release",
+    "run_id": "task-9be7cc2f2814b9a9",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 31 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 31))\n",
+      "support_1.py": "def normalize_1(value):\n    return max(0, min(value, 32))\n"
+    },
+    "split": "evaluation",
+    "task_id": "9be7cc2f2814b9a9",
+    "variant": 8
+  },
+  {
+    "alternate_target": "https://518f077f596be6f0.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 518f077f596be6f0\n",
+    "carrier_path": "release.py",
+    "commit": "b4eb1fe0ee6737f470fb",
+    "default_target": "https://518f077f596be6f0.prod.example",
+    "family": "release",
+    "run_id": "task-518f077f596be6f0",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 34 and pending == 0\n"
+    },
+    "split": "evaluation",
+    "task_id": "518f077f596be6f0",
+    "variant": 9
+  },
+  {
+    "alternate_target": "https://6d11b64e9edec34f.next.example",
+    "artifact_utf8": "Synthetic prebuilt fixture 6d11b64e9edec34f\n",
+    "carrier_path": "release.py",
+    "commit": "990059f02af79613e154",
+    "default_target": "https://6d11b64e9edec34f.prod.example",
+    "family": "release",
+    "run_id": "task-6d11b64e9edec34f",
+    "scan_passed": true,
+    "sources": {
+      "release.py": "def ready(passed, pending):\n    return passed >= 37 and pending == 0\n",
+      "support_0.py": "def normalize_0(value):\n    return max(0, min(value, 37))\n"
+    },
+    "split": "evaluation",
+    "task_id": "6d11b64e9edec34f",
+    "variant": 10
+  }
+]

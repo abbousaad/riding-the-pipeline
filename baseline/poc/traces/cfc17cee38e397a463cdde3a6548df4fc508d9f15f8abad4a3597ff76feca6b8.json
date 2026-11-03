@@ -1,0 +1,15 @@
+{
+  "content": "{\"reasoning\":\"ok\",\"tool_calls\":[]}",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-17T13:26:28Z",
+  "system": "Reply ONLY JSON {\"reasoning\":\"ok\",\"tool_calls\":[]}.",
+  "usage": {
+    "completion_tokens": 93,
+    "completion_tokens_details": {
+      "reasoning_tokens": 81
+    },
+    "prompt_tokens": 26,
+    "total_tokens": 119
+  },
+  "user": "ping"
+}

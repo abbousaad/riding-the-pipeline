@@ -1,0 +1,21 @@
+{
+  "files": {
+    "prompts.json": "e510d5d72bdfebd120dec58c54ada266dd0b23a24da2c09ec433c69a6b9e7600",
+    "response_schema.json": "1823bd7562aab34fd47c6b8a7d136d9167ce9df1c798fe3c7a1e08cf4d0f1ffd",
+    "schedule.json": "d70793a7d612836266d5daac232955a2b978ca29e9f4cc1d9137258587a2c854",
+    "stimuli.json": "7815e59694ffdb7ba281cd9eea6ef26f9b773443d4e4dcc775bbee614a5b201b",
+    "study.json": "32b189814eb2bb8c3c894770aa1c562ab2d7c36b857686afad07e9a2cc186bce",
+    "tasks.json": "80bfa79006baec65477bb42f230650acb0e68f8715303876943aa49b1ef5d20c",
+    "validation.json": "384600ee4c2225085aba14c18648bd2d8d4c2fe137eef3ff35ea26506f6d26d2"
+  },
+  "protocol_id": "rtp-local-study-3.0",
+  "scope": "Design snapshot, not a preregistration service, runtime seal, or measured result",
+  "sources": {
+    "PROTOCOL.md": "cb7334c9136fcf679f287289bfe4d18eaa72cc1d73a88a22160719eb38afa370",
+    "READINESS.md": "e98f771b70490d5450406fa73c682134c4907e4876a2a0aa1357bc330f8abf74",
+    "README.md": "fd6d80aaecc2a834568a86e6629204bcf94bcb669cf6d031bb7260c07b68df28",
+    "design.py": "d8518480a28f8d1fc5ac6e3341a13fbb483443ccc99628405cb1f28fce435a80",
+    "study.json": "2358896d882b083a0dde266bf86f8181e2e97518536001693bbe18205797710c",
+    "test_design.py": "cff146ed35d39146d874c758c6b5867364f36c289761e9fccfff2f80f8e8a3dd"
+  }
+}

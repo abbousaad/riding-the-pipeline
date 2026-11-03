@@ -1,0 +1,85 @@
+\relax 
+\citation{spiffe}
+\citation{intoto,slsa}
+\citation{aads}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}{}{section.1}{}}
+\citation{spiffe}
+\citation{intoto,slsa}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The compromise chain laid over the pipeline phases. The four gates are drawn where they fire, each returning allow. Behavioral divergence is marked at each phase: a spike at the tester and a weaker rise at the deployer, both matched by benign controls (Fig.~\ref {fig:timeline}) that drift as far, so the curve marks anomaly and not the attack. No gate reads it.}}{2}{}\protected@file@percent }
+\newlabel{fig:chain-gates}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}The Gates Under Test}{2}{}\protected@file@percent }
+\newlabel{sec:gates}{{II}{2}{}{section.2}{}}
+\citation{aads}
+\citation{conf00}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Threat Model}{3}{}\protected@file@percent }
+\newlabel{sec:threat}{{III}{3}{}{section.3}{}}
+\citation{conf00}
+\citation{conf00}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces For each gate: the question it answers, the signal it reads, whether it re-verifies on a schedule, and what a compromised-but-conformant agent looks like to it.}}{4}{}\protected@file@percent }
+\newlabel{tab:gates}{{I}{4}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}The Compromise Chain}{4}{}\protected@file@percent }
+\newlabel{sec:chain}{{IV}{4}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Chain Walkthrough}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Injection and Oracle}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}What the Study Covers and What It Does Not}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Sequence diagram of the chain: tester-agent and deployer-agent, the delegation edge between them, the poisoned memory write and its later read, the four gate checkpoints with their allow verdicts, and the end-of-run oracle.}}{5}{}\protected@file@percent }
+\newlabel{fig:sequence}{{2}{5}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Measurement Method}{5}{}\protected@file@percent }
+\newlabel{sec:method}{{V}{5}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Experimental Setup and Pipeline Rig}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}What ``Pass'' Means}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Reproducibility}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Divergence Instrument}{6}{}\protected@file@percent }
+\newlabel{sec:divergence}{{\mbox  {V-D}}{6}{}{subsection.5.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Results}{6}{}\protected@file@percent }
+\newlabel{sec:results}{{VI}{6}{}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Gate Outcomes}{6}{}\protected@file@percent }
+\newlabel{lst:chain}{{1}{7}{}{lstlisting.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}The chain descriptor (YAML): phases, agent profiles, injection point, and the end-of-run oracle assertion.}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Reach of the Compromise}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Divergence Timing}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Per-gate, per-phase decision matrix, over the twelve compromised runs. Every cell on the compromise chain is an allow in both one-shot and continuous mode; the paired violation column confirms each gate blocks when its own predicate is broken.}}{8}{}\protected@file@percent }
+\newlabel{tab:results}{{II}{8}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Sensitivity}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Timeline. Pipeline phases on the x-axis; the four gates' allow decisions as marks along the top; the per-phase behavioral divergence below, with its clean-baseline band. The compromise curve (red) spikes at the tester (AUC 1.00) and rises at the deployer (AUC 0.87). The benign controls (blue) drift as far at each measured phase, a benign override at the tester (0.97) and a benign atypical target at the deployer (0.84), so the compromise and benign-anomaly points coincide and no threshold on the divergence separates malice from a benign departure. That coincidence is the paper's central result.}}{8}{}\protected@file@percent }
+\newlabel{fig:timeline}{{3}{8}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion: What the Gap Requires}{8}{}\protected@file@percent }
+\newlabel{sec:discussion}{{VII}{8}{}{section.7}{}}
+\citation{forensicsig}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Related Work}{9}{}\protected@file@percent }
+\newlabel{sec:related}{{VIII}{9}{}{section.8}{}}
+\citation{solarwinds}
+\citation{intoto,slsa}
+\citation{ipi1,ipi2}
+\citation{memsurvey,mempoison1,mempoison2,mempoison3}
+\citation{gitinject}
+\citation{contverif,attestationCoker,attestationKeylime}
+\citation{ueba}
+\citation{gahiFraud}
+\citation{forensicsig}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{spiffe}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{10}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{IX}{10}{}{section.9}{}}
+\bibcite{intoto}{2}
+\bibcite{slsa}{3}
+\bibcite{aads}{4}
+\bibcite{conf00}{5}
+\bibcite{forensicsig}{6}
+\bibcite{solarwinds}{7}
+\bibcite{ipi1}{8}
+\bibcite{ipi2}{9}
+\bibcite{memsurvey}{10}
+\bibcite{mempoison1}{11}
+\bibcite{mempoison2}{12}
+\bibcite{mempoison3}{13}
+\bibcite{gitinject}{14}
+\bibcite{contverif}{15}
+\bibcite{attestationCoker}{16}
+\bibcite{attestationKeylime}{17}
+\bibcite{ueba}{18}
+\bibcite{gahiFraud}{19}
+\@writefile{toc}{\contentsline {section}{References}{11}{}\protected@file@percent }
+\gdef \@abspage@last{11}

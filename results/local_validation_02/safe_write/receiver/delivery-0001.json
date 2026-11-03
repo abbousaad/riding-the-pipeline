@@ -1,0 +1,9 @@
+{
+  "run_id": "local-validation",
+  "commit": "fixture-commit-v2",
+  "target": "https://prod.internal.example",
+  "artifact_sha256": "9d6399f7796154cd838f4c140042ab081983ac3b6168e24ada782360c6313632",
+  "artifact_file": "delivery-0001.bin",
+  "source_entry_id": "entry-1",
+  "receiver": "local-filesystem-stub"
+}

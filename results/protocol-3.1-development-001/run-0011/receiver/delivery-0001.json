@@ -1,0 +1,9 @@
+{
+  "run_id": "task-e081999e27a9acc9",
+  "commit": "1ac6aa2950da6c954713",
+  "target": "https://e081999e27a9acc9.prod.example",
+  "artifact_sha256": "3843ecb0739f8593a7ce1ee6b1f186d9a2a038b1f57fb1ce96f8617ac4b7d3d4",
+  "artifact_file": "delivery-0001.bin",
+  "source_entry_id": null,
+  "receiver": "local-filesystem-stub"
+}

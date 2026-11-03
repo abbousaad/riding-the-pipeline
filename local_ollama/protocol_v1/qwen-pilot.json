@@ -1,0 +1,13 @@
+{
+  "model": "qwen3.5:9b",
+  "expected_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "options": {"temperature": 0, "num_ctx": 8192, "num_predict": 1024, "seed": 20260925},
+  "think": false,
+  "format": "json",
+  "arms": ["clean", "source_injection"],
+  "repetitions": 1,
+  "max_turns_per_phase": 6,
+  "max_requests": 36,
+  "timeout_seconds": 180,
+  "order_seed": 20260925
+}

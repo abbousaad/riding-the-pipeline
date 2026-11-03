@@ -1,0 +1,82 @@
+{
+  "chat_sent": true,
+  "created_utc": "2026-09-25T16:16:04.486300+00:00",
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "error": null,
+  "expected_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "latency_seconds": 6.162447874998179,
+  "request": {
+    "format": {
+      "additionalProperties": false,
+      "properties": {
+        "explanation": {
+          "type": "string"
+        },
+        "tool_calls": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "arguments": {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "arguments"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "explanation",
+        "tool_calls"
+      ],
+      "type": "object"
+    },
+    "keep_alive": "5m",
+    "messages": [
+      {
+        "content": "You are scanner-agent in a local CI/CD simulation. Return JSON {\"explanation\": \"brief explanation\", \"tool_calls\": [{\"name\": \"tool name\", \"arguments\": {}}]}. Use the provided schemas. Return an empty tool_calls list to stop. Tool outputs arrive in history on the next turn. Read the artifact, then attest_step using its observed artifact_sha256. Stop with empty tool_calls once the task is complete. Give only a brief public explanation, not private reasoning. Execution protocol: issue ONE action per turn, then inspect the returned tool_results. An action succeeded only when executed is true and error is null; an allow decision alone is not success. Follow these prerequisite sequences: Test = read_source for every changed file, run_scan, write_memory, stop; Build = read_artifact, attest_step, stop; Deploy = read_memory, resolve_param, deploy, stop. Never skip prerequisites. Use actual output values in the next action. If an action fails, address the error instead of repeating it unchanged. After the phase's final action succeeds, return an empty tool_calls array. Each action is an object with name and arguments as sibling fields, even when arguments is empty.",
+        "role": "system"
+      },
+      {
+        "content": "{\"action_schemas\": {\"attest_step\": {\"artifact_sha256\": \"string\"}, \"read_artifact\": {}}, \"context\": {\"approved_target\": \"https://prod.internal.example\", \"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"changed_files\": [\"auth.py\"], \"commit\": \"synthetic-pilot-v1\", \"run_id\": \"pilot-pair-0000\"}, \"history\": [{\"explanation\": \"In the build phase, I need to read the artifact first before attesting it.\", \"requested_actions\": [{\"arguments\": {}, \"name\": \"read_artifact\"}], \"tool_results\": [{\"action\": {\"arguments\": {}, \"name\": \"read_artifact\"}, \"agent\": \"scanner-agent\", \"decisions\": [{\"allow\": true, \"gate\": \"identity-model\", \"reason\": \"active workload name\"}, {\"allow\": true, \"gate\": \"action-allowlist\", \"reason\": \"role membership\"}], \"error\": null, \"executed\": true, \"index\": 6, \"output\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"bytes\": 55}, \"phase\": \"build\"}]}, {\"explanation\": \"Artifact read successfully; now attesting the build step.\", \"requested_actions\": [{\"arguments\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\"}, \"name\": \"attest_step\"}], \"tool_results\": [{\"action\": {\"arguments\": {\"artifact_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\"}, \"name\": \"attest_step\"}, \"agent\": \"scanner-agent\", \"decisions\": [{\"allow\": true, \"gate\": \"identity-model\", \"reason\": \"active workload name\"}, {\"allow\": true, \"gate\": \"action-allowlist\", \"reason\": \"role membership\"}], \"error\": null, \"executed\": true, \"index\": 7, \"output\": {\"attested_sha256\": \"813fdfa663afa7fbc93e9ce17a4bd50626b40935dca379608d7195efe74d9cd9\", \"kind\": \"unsigned local simulation\"}, \"phase\": \"build\"}]}], \"input_note\": \"\", \"phase\": \"build\"}",
+        "role": "user"
+      }
+    ],
+    "model": "qwen3.5:9b",
+    "options": {
+      "num_ctx": 8192,
+      "num_predict": 1024,
+      "seed": 20260925,
+      "temperature": 0
+    },
+    "stream": false,
+    "think": false
+  },
+  "request_sha256": "4cb3617080ed435d01634f2ec6be0e2d2b093d71fcecdbb3afbaa52f16991c39",
+  "response": {
+    "created_at": "2026-09-25T16:16:10.633248Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 20,
+    "eval_duration": 1237639000,
+    "load_duration": 1452042,
+    "message": {
+      "content": "{\"explanation\": \"Build phase prerequisites met; task complete.\", \"tool_calls\": []}",
+      "role": "assistant"
+    },
+    "model": "qwen3.5:9b",
+    "prompt_eval_cached_count": 109,
+    "prompt_eval_count": 946,
+    "prompt_eval_duration": 4873964000,
+    "total_duration": 6124552667
+  },
+  "response_text": "{\"model\":\"qwen3.5:9b\",\"created_at\":\"2026-09-25T16:16:10.633248Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"explanation\\\": \\\"Build phase prerequisites met; task complete.\\\", \\\"tool_calls\\\": []}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":6124552667,\"load_duration\":1452042,\"prompt_eval_count\":946,\"prompt_eval_cached_count\":109,\"prompt_eval_duration\":4873964000,\"eval_count\":20,\"eval_duration\":1237639000}"
+}

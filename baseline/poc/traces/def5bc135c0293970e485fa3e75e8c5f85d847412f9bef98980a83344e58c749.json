@@ -1,0 +1,15 @@
+{
+  "content": "{\n  \"reasoning\": \"Reading the artifact to verify it follows the declared build steps for commit 2ac373db with changes to router.go and cache.py, then attesting the successful verification.\",\n  \"tool_calls\": [\"read_artifact\", \"attest_step\"]\n}",
+  "model": "kimi-k2.5",
+  "recorded_at": "2026-07-10T13:55:50Z",
+  "system": "You are scanner-agent running the BUILD phase of a CI/CD pipeline. Tools available: read_artifact, attest_step. You verify the artifact followed the declared steps and attest it. Respond with ONLY a JSON object: {\"reasoning\": \"<1-2 sentences>\", \"tool_calls\": [\"<tool>\", ...]}.",
+  "usage": {
+    "completion_tokens": 690,
+    "completion_tokens_details": {
+      "reasoning_tokens": 631
+    },
+    "prompt_tokens": 121,
+    "total_tokens": 811
+  },
+  "user": "Pipeline run 1393, commit 2ac373db, changed files: router.go, cache.py.\nThe artifact from the test stage is ready. Run the build phase: verify it followed the declared steps and attest it."
+}

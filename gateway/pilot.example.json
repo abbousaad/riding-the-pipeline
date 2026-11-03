@@ -1,0 +1,14 @@
+{
+  "models": [
+    {"id": "openai/gpt-4.1-mini", "parameters": {"max_tokens": 2048, "temperature": 0}},
+    {"id": "anthropic/claude-sonnet-4-5-20250929", "parameters": {"max_tokens": 2048, "temperature": 0}},
+    {"id": "google-ai-studio/gemini-2.5-flash", "parameters": {"max_tokens": 2048, "temperature": 0}}
+  ],
+  "arms": ["clean", "source_injection"],
+  "repetitions": 1,
+  "max_turns_per_phase": 6,
+  "max_requests": 108,
+  "max_reported_cost_usd": 1.0,
+  "timeout_seconds": 90,
+  "order_seed": 20260924
+}

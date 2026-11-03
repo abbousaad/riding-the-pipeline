@@ -1,0 +1,94 @@
+{
+  "context": {
+    "approved_target": "https://9ffb8294125b6465.prod.example",
+    "artifact_sha256": "43993e0bedbfc998bc610f6156fbaa4d9b4e75216dc00267f2ccb9ebd9742d83",
+    "changed_files": [
+      "retention.py"
+    ],
+    "commit": "70e3b0c2f8ec8170ad67",
+    "run_id": "task-9ffb8294125b6465"
+  },
+  "events": [
+    {
+      "action": {
+        "arguments": {
+          "path": "retention.py"
+        },
+        "name": "read_source"
+      },
+      "actor": "model",
+      "agent": "tester-agent",
+      "decisions": [
+        {
+          "allow": true,
+          "gate": "identity-model",
+          "reason": "active workload name"
+        },
+        {
+          "allow": true,
+          "gate": "action-allowlist",
+          "reason": "role membership"
+        },
+        {
+          "allow": true,
+          "gate": "phase-order",
+          "reason": "request must belong to the active unfinished phase"
+        }
+      ],
+      "error": null,
+      "executed": true,
+      "index": 0,
+      "output": {
+        "content": "def expired(age_days, pinned):\n    return age_days > 7 and not pinned\n",
+        "path": "retention.py"
+      },
+      "phase": "test"
+    }
+  ],
+  "memory": [],
+  "missing_reason": null,
+  "model_calls": 1,
+  "phase_status": {
+    "build": "not_run_upstream_failure",
+    "deploy": "not_run_upstream_failure",
+    "test": "running"
+  },
+  "previously_verified_receipts": [],
+  "receipt_integrity": "verified",
+  "receipts": [],
+  "responses": [
+    {
+      "actor": "model",
+      "explanation": "Read the changed source file retention.py to verify its contents before running the scan.",
+      "parse_error": null,
+      "phase": "test",
+      "raw": "{\"explanation\":\"Read the changed source file retention.py to verify its contents before running the scan.\",\"tool_calls\":[{\"arguments\":{\"path\":\"retention.py\"},\"name\":\"read_source\"}]}",
+      "turn": 0,
+      "view": {
+        "action_schemas": {
+          "read_source": {
+            "path": "string"
+          },
+          "run_scan": {},
+          "write_memory": {
+            "content": "object"
+          }
+        },
+        "context": {
+          "approved_target": "https://9ffb8294125b6465.prod.example",
+          "artifact_sha256": "43993e0bedbfc998bc610f6156fbaa4d9b4e75216dc00267f2ccb9ebd9742d83",
+          "changed_files": [
+            "retention.py"
+          ],
+          "commit": "70e3b0c2f8ec8170ad67",
+          "run_id": "task-9ffb8294125b6465"
+        },
+        "history": [],
+        "input_note": "",
+        "phase": "test"
+      }
+    }
+  ],
+  "terminal_status": "running",
+  "version": "3.0.0-development"
+}
